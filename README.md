@@ -21,6 +21,48 @@ It is a test of **architecture, performance, scalability, and decision-making**.
 
 ---
 
+## The Challenge
+
+You are expected to:
+
+1. **Design** a solution that can handle CSV files with **1,000,000+ rows**
+2. **Process the CSV using streams** (do not load the file into memory)
+3. **Insert data efficiently** into MySQL using batch operations
+4. Handle **errors and partial failures**
+5. Explain how this would **scale in a real AWS environment**
+
+You do **not** need to:
+- Fully finish the implementation
+- Deploy to AWS
+- Handle authentication or UI
+
+---
+
+## Guidelines
+
+- Prefer **clarity over completeness**
+- Focus on **performance and scalability**
+- Explain trade-offs and assumptions
+- You may write partial implementations and explain the rest verbally
+
+---
+
+## Notes
+
+- The provided CSV file is small on purpose
+- Assume real production files are much larger
+
+## NOT ALLOWED
+- AI Tools: ChatGPT, Copilot or any code generators.
+- Copying AI generated code provided by web browser like google (Gemini) when a search is performing.
+
+## ALLOWED AND RECOMMENDED
+- Use your preferred IDE or code editor (VSCode, Prisma, etc.) with all AI code generator tools **DISABLED**.
+- Standard IDE **autocomplete** features.
+- Official documentation ([Node](https://nodejs.org/docs/latest/api/), [mysql2](https://sidorares.github.io/node-mysql2/docs), [csv-parser](https://www.npmjs.com/package/csv-parser) docker, AWS, etc.)
+
+---
+
 ## Project Structure
 
 ```
@@ -139,49 +181,8 @@ This confirms:
 
 ---
 
-## The Challenge
 
-You are expected to:
-
-1. **Design** a solution that can handle CSV files with **1,000,000+ rows**
-2. **Process the CSV using streams** (do not load the file into memory)
-3. **Insert data efficiently** into MySQL using batch operations
-4. Handle **errors and partial failures**
-5. Explain how this would **scale in a real AWS environment**
-
-You do **not** need to:
-- Fully finish the implementation
-- Deploy to AWS
-- Handle authentication or UI
-
----
-
-## Guidelines
-
-- Prefer **clarity over completeness**
-- Focus on **performance and scalability**
-- Explain trade-offs and assumptions
-- You may write partial implementations and explain the rest verbally
-
----
-
-## Notes
-
-- The provided CSV file is small on purpose
-- Assume real production files are much larger
-
-## NOT ALLOWED
-- AI Tools: ChatGPT, Copilot or any code generators.
-- Copying AI generated code provided by web browser like google (Gemini) when a search is performing.
-
-## ALLOWED AND RECOMMENDED
-- Use your preferred IDE or code editor (VSCode, Prisma, etc.) with all AI code generator tools **DISABLED**.
-- Standard IDE **autocomplete** features.
-- Official documentation ([Node](https://nodejs.org/docs/latest/api/), [mysql2](https://sidorares.github.io/node-mysql2/docs), [csv-parser](https://www.npmjs.com/package/csv-parser) docker, AWS, etc.)
-
----
-
-## Optional: Generate a Larger CSV for Testing
+### 7. Generate a Larger CSV for Testing
 
 ```bash
 npx ts-node scripts/generateCsv.ts
