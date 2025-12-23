@@ -177,14 +177,14 @@ You do **not** need to:
 ## ALLOWED AND RECOMMENDED
 - Use your preferred IDE or code editor (VSCode, Prisma, etc.) with all AI code generator tools **DISABLED**.
 - Standard IDE **autocomplete** features.
-- Official documentation (Node, mysql2, docker, fs, AWS, etc.)
+- Official documentation ([Node](https://nodejs.org/docs/latest/api/), [mysql2](https://sidorares.github.io/node-mysql2/docs), [csv-parser](https://www.npmjs.com/package/csv-parser) docker, AWS, etc.)
 
 ---
 
 ## Optional: Generate a Larger CSV for Testing
 
 ```bash
-node scripts/generateCsv.js
+npx ts-node scripts/generateCsv.ts
 ```
 
 This will generate a larger CSV file under the `data/` directory.
